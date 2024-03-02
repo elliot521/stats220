@@ -1,6 +1,6 @@
 # Stats 220 
 
-This repository contains materials for Stats 220 assignment one, focusing on Markdown and R language. The purpose of this assignment is to gain understanding in Markdown syntax and using R code image package for visualization.
+*This repository contains materials for Stats 220 assignment one, focusing on Markdown and R language. The purpose of this assignment is to gain understanding in Markdown syntax and using R code image package for visualization.*
 
 ## Contents
 
@@ -10,8 +10,8 @@ This repository contains materials for Stats 220 assignment one, focusing on Mar
 
 ## Assignment objectives
 
-- **Gaining** the deep understanding with Markdown syntax for creating structured documents.
-- **Creating** with memes by using R studio.
+- **Gaining** the deep understanding with 'Markdown' syntax for creating structured documents.
+- **Creating** with memes by using 'R studio'.
 
 ## Reference links
 [Color_code](https://www.w3schools.com/colors/colors_picker.asp)
