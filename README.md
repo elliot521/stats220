@@ -14,7 +14,7 @@
 
 ## Reference links
 [Color_code](https://www.w3schools.com/colors/colors_picker.asp)
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" alt="R Logo" width="200" height="200">
+<img src="https://www.w3schools.com/colors/img_colormap.gif" alt="R Logo" width="100" height="100">
 
 [Image_functions](https://docs.ropensci.org/magick/articles/intro.html)
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" alt="R Logo" width="200" height="200">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" alt="R Logo" width="100" height="100">
