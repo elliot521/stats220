@@ -1,4 +1,4 @@
-#📊 Stats 220 
+# 📊 Stats 220 
 
 *This repository contains materials for Stats 220 assignment one, focusing on Markdown and R language. The purpose of this assignment is to gain understanding in Markdown syntax and using R code image package for visualization.*
 
