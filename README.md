@@ -14,5 +14,7 @@
 
 ## Reference links
 [Color_code](https://www.w3schools.com/colors/colors_picker.asp)
+![](https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg)
 
 [Image_functions](https://docs.ropensci.org/magick/articles/intro.html)
+![](https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg)
