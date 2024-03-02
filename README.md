@@ -4,7 +4,7 @@ This repository contains materials for Stats 220 assignment one, focusing on Mar
 
 ## Contents
 
-1. R Scripts**: Contains R scripts used for data analysis and visualization tasks.
+1. **R Scripts**: Contains R scripts used for data analysis and visualization tasks.
 2. **Markdown Files**: Includes Markdown files showcasing the analysis process and results.
 3. **Images**: Stores images used in the Markdown files for visual representation.
 
@@ -14,6 +14,6 @@ This repository contains materials for Stats 220 assignment one, focusing on Mar
 - **Creating** with memes by using R studio.
 
 ## Reference links
-[Color_code]([https://www.example.com](https://www.w3schools.com/colors/colors_picker.asp)https://www.w3schools.com/colors/colors_picker.asp)
+[Color_code](https://www.w3schools.com/colors/colors_picker.asp)
 
-[Image_functions]([[https://www.example.com](https://www.w3schools.com/colors/colors_picker.asp)https://www.w3schools.com/colors/colors_picker.asp](https://docs.ropensci.org/magick/articles/intro.html)https://docs.ropensci.org/magick/articles/intro.html)
+[Image_functions](https://docs.ropensci.org/magick/articles/intro.html)
