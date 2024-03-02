@@ -13,8 +13,5 @@
 - **Creating** memes by using `R studio` and **understanding** the basic usage of `R language`.
 
 ## Reference links
-###[Color_code](https://www.w3schools.com/colors/colors_picker.asp)
-<img src="https://www.w3schools.com/colors/img_colormap.gif" alt="R Logo" width="100" height="100">
-
-###[Image_functions](https://docs.ropensci.org/magick/articles/intro.html)
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" alt="R Logo" width="100" height="100">
+[**Color_code**](https://www.w3schools.com/colors/colors_picker.asp)
+[**Image_functions**](https://docs.ropensci.org/magick/articles/intro.html)
