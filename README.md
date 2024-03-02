@@ -10,8 +10,8 @@
 
 ## Assignment objectives
 
-- **Gaining** the deep understanding with 'Markdown' syntax for creating structured documents.
-- **Creating** with memes by using 'R studio'.
+- **Gaining** the deep understanding with `Markdown` syntax for creating structured documents.
+- **Creating** with memes by using `R studio`.
 
 ## Reference links
 [Color_code](https://www.w3schools.com/colors/colors_picker.asp)
