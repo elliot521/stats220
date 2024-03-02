@@ -4,14 +4,13 @@
 
 ## Contents
 
-1. **R Scripts**: Contains R scripts used for data analysis and visualization tasks.
-2. **Markdown Files**: Includes Markdown files showcasing the analysis process and results.
-3. **Images**: Stores images used in the Markdown files for visual representation.
+1. **R Scripts**: Contains R scripts used for meme creation tasks.
+2. **Markdown Files**: Includes Markdown files showcasing the meme presentation and formatting with texts.
 
 ## Assignment objectives
 
 - **Gaining** the deep understanding with `Markdown` syntax for creating structured documents.
-- **Creating** with memes by using `R studio`.
+- **Creating** memes by using `R studio` and **understanding** the basic usage of `R language`.
 
 ## Reference links
 [Color_code](https://www.w3schools.com/colors/colors_picker.asp)
