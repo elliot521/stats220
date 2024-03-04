@@ -1,1 +1,143 @@
+---
+title: "Creating images with R"
+author: "Elliot Bu"
+subtitle: "With a little bit of magick"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+```{css}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+p {
+  color: #333333;
+}
+
+
+```
+
+## Project requirements
+[**Github website link**](https://github.com/elliot521)
+
+[**Github repo:**](https://github.com/elliot521/stats220) During this assignment, my github repo contains "ReadMe.md" and ".nojekyll".
+- **ReadMe.md:** It contains bold and italics font for some of the texts, ordered and un-ordered bullets points shows over `contents` and `assignment objectives`. Two levels of headers used with title and subtitle. Website links to **Color Picker** and 
+**Image_function**.
+
+- **.nojekyll:** It contains the code of my final website assignment submission. It contains codes for memes, the other summarisation for the rest of this assignment.
+
+**Meme Codes:** From this part, I used `c()`, `image_blank()`, `image_read()`, `image_annotate()`, `image_append()`, `image_write()` and `image_animate()`. A few pipes `%>%` used to futher develop the **image** or **texts** and comments `#` used as referencing with code understanding.
+
+![**Project1 Files**](rstudio.png)
+
+## My meme
+```{r meme-code, eval=TRUE}
+# Key features of inspo_meme.png:
+# Layout: left size text and right size images
+# Text: Bold, Normal font
+
+
+library(magick)
+#image part
+after_gym_url <-"https://ih1.redbubble.net/image.5312849102.3231/st,small,507x507-pad,600x600,f8f8f8.jpg"
+before_gym_url <- "https://i.ebayimg.com/images/g/R8UAAOSwcu5irXAs/s-l1600.jpg"
+
+before_gym <- image_read(before_gym_url)%>%
+  image_scale(250)
+
+after_gym <- image_read(after_gym_url)%>%
+  image_scale(250)
+
+#Text part
+before_text <- image_blank(width = 250, height = 250, color = "#ffffff") %>%
+  image_annotate(text = "before you go to gym \nin winter",
+                 color = "#000000",
+                 size = 20, font = "Impact",
+                 gravity = "center")
+
+after_text <- image_blank(width = 250, height = 250, color = "#ffffff") %>%
+  image_annotate(text = "once you finish workout \nin winter",
+                 color = "#000000", font = "Impact",
+                 size = 20, gravity = "center")
+
+#presentation part
+top <- image_append(c(before_gym, before_text))
+bottom <- image_append(c(after_gym, after_text))
+
+#Gathering them
+c(top, bottom) %>%
+  image_append(stack=TRUE) %>%
+  image_scale(250)
+
+```
+
+
+```{r animation-code, eval=FALSE}
+library(magick)
+# Animatate
+first_slide <- image_blank(width = 250, height = 250, color = "#000000")%>%
+  image_annotate("🥶Uni Students Daily", color = "#ffffff", font = "Impact",
+                 size = 20, gravity = "center")
+
+# third slide
+third_slide <- image_blank(width = 250, height = 250, color = "#000000")%>%
+  image_annotate("📍Outside gym", color = "#ffffff", font = "Impact",
+                 size = 20, gravity = "center")
+
+#fourth_slide
+hotdog_sus_pic <- image_read("https://media.tenor.com/Nfct9RreQfUAAAAe/dog-meme.png")%>%
+  image_scale("130x130")
+
+me <- image_blank(width = 250, height = 75, color = "#ffffff") %>%
+  image_annotate(text = "bro: let's have some bubble tea🧋",
+                 color = "#000000",
+                 size = 20, font = "Impact")
+
+bro <- image_blank(width = 250, height = 75, color = "#ffffff") %>%
+  image_annotate(text = "me on the cut day: ",
+                 color = "#000000",
+                 size = 20, font = "Impact")
+gathering <- c(me, bro, hotdog_sus_pic)%>%
+  image_append(stack = TRUE)
+# print(gathering)
+  
+# summarize annimation
+frames <- c(first_slide, second_slide, third_slide, gathering)
+image_animate(frames, fps = 1, loop = 1)%>%
+  image_scale(250)
+
+#image_write(final_work, "my_animation.gif")
+
+```
+
+## Creativity
+**CSS Code: **From this part, I used `body` and `p` in order to decorate the layout of the website. I changed the background color of the whole website and change all of the texts font within `body` part.
+I changed the color of texts within `p` part.
+
+**Import local image to rmd file: **As what we taught, we usually used `![Alt text](url)` to fetch the url from external website. In this assignment, it related to import a local image file, which just use `![](File name)` in order to import to **Rmd** file. 
+
+`Note: the local file should be in the same folder with Rmd file`
+
+## Learning reflection
+
+**What I Have Learned:**
+
+- Github repo: From this assignment, I learned how to how to edit `Readme.md` by using markdown language, knew `.nojekyll` used for static website that not allowed to run and how to create new file and commit changes with them. 
+
+- Markdown Language: From this assignment, I learned how format the text by using **fonts** and **headers**, how to use **links** and **images** to present in the website page, and how to list things asceadingand desceading orders. Basically, the markdown language is just to form the structure of the website and the decorate job is not for markdown language, it is for CSS programming language.
+
+- Magick Library Usage: I learned the basic syntax rule of R language and how to use the functions properly in order to present the images. It differs from the other programming languages as it used the pipe `%>%` if we would like to develop further.
+
+- CSS: I learned how to use some elements such as: `<p>`, `<body>`, etc. Basically, the mission for CSS is just to decorate the website layout. It gains the deeper understanding of my website layout decpration knowledge, also improved my 'search up' skills when I got confused.
+
+**Things I am Curious In The Future:**
+
+- Machine learning and AI: Since ChatGPT released in the past few years, it assists lots of things with our daily
+life, such as it can free up the tele-communication , which it can solve most of problems online. 
+So I am curious with the basic logic for machine learning and AI, as it relates lots of knowledge of database management and algorithms in order to perform functions accurate and fast.
 
